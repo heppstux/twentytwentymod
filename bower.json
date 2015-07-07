@@ -1,0 +1,24 @@
+{
+  "name": "zurbtwentytwenty",
+  "version": "0.0.0",
+  "authors": [
+    "zurb.com"
+  ],
+  "description": "Zurb twentytwenty before/after slider",
+  "main": [
+		"js/jquery.event.move.js",
+		"js/jquery.twentytwenty.js"
+	],
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "scss",
+    "img"
+  ]
+}
