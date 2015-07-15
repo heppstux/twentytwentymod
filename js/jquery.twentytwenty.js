@@ -95,6 +95,14 @@
       container.find("img").on("mousedown", function(event) {
         event.preventDefault();
       });
+      
+      container.find("img").on("click", function(event) {
+        var imgHeight = $(this).outerHeight(),
+            imgWidth = $(this).outerWidth();
+        sliderPct = (sliderOrientation === 'vertical') ? (event.offsetY)/imgHeight : (event.offsetX)/imgWidth;
+        adjustSlider(sliderPct);
+        event.preventDefault();
+      });
 
       $(window).trigger("resize.twentytwenty");
     });
